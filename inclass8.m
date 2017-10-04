@@ -1,4 +1,4 @@
-%AW: looks good. see comments blow. 
+%AW:  see comments blow. 0.9/1.
 
 % am132
 % Akash Mitra
@@ -40,7 +40,7 @@ Score_lowerpenalty = swalign(randomSeq, newSeq, 'GapOpen', .0001);
 % first and last 40 bases are perfectly aligned, with non perfect matches
 % in the middle sequence recieving gaps.
 
-%AW: Ok. note also that raising the gap penalty will cause mismatches rather than gaps. 
+%AW: Ok. note also that raising the gap penalty will cause mismatches rather than gaps. -0.05.
 
 % E. run swalign with a low value of GapOpen but a high value of ExtendGap,
 % explain the result
