@@ -1,3 +1,5 @@
+%AW: looks good. see comments blow. 
+
 % am132
 % Akash Mitra
 
@@ -23,6 +25,8 @@ Score_default = swalign(randomSeq, newSeq);
 % D. run swalign with much higher and lower values of the GapOpen parameter
 % and explain the results. 
 
+%AW: by default swalign uses the amino acid alphabet. Set 'alphabet' to 'nt'. -0.05. 
+
 Score_higherpenalty = swalign(randomSeq, newSeq, 'GapOpen', 100);
 Score_lowerpenalty = swalign(randomSeq, newSeq, 'GapOpen', .0001);
 
@@ -35,6 +39,8 @@ Score_lowerpenalty = swalign(randomSeq, newSeq, 'GapOpen', .0001);
 % cases where there is alignment. In this situation, it is likely that the
 % first and last 40 bases are perfectly aligned, with non perfect matches
 % in the middle sequence recieving gaps.
+
+%AW: Ok. note also that raising the gap penalty will cause mismatches rather than gaps. 
 
 % E. run swalign with a low value of GapOpen but a high value of ExtendGap,
 % explain the result
